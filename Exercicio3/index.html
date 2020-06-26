@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+    <script src="script3.js"></script>
+</head>
+<style>
+    body {
+        background-color: cadetblue;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    .container {
+        margin: 10px 15%;
+    }
+
+    #data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .card {
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        padding: 10px;
+        display: grid;
+        background-color: lightgrey;
+    }
+
+    label {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .formulario {
+        display: none;
+    }
+
+    .formulario.none {
+        display: unset;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Cards</h1>
+        <p>
+            <button onclick="addPost()">Add Post</button>
+            <form class="formulario" id="form">
+                <label>Nome: </label>
+                <input type="text" name="name" />
+                <label>email: </label>
+                <input type="text" name="email" />
+                <label>Body: </label>
+                <input type="text" name="body" />
+                <button onclick="add()">Adicionar</button>
+            </form>
+        </p>
+        <section id="data">
+        </section>
+
+    </div>
+</body>
+
+</html>
